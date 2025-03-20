@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import { About, Education, Hero, Navbar, Tech, Works, Achievements,Footer} from './components';
-
+// starting point
 function App() {
   return (
     <BrowserRouter>
