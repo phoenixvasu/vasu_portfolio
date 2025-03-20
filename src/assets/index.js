@@ -9,10 +9,12 @@ import kvlogo from "./company/kvlogo.jpg"
 import talkstraimage from "./talkstra.png"
 import blogmentumimage from "./blogmentum.png"
 import shoppingcartimage from "./shoppingcart.png"
+import github from "./github.png"
 
 export {
   logo,
   iiitnlogo,
+  github,
   aspcslogo,
   profilepic,
   kvlogo,
