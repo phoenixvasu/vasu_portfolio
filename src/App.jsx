@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
-import { About, Education, Hero, Navbar, Tech, Works, Achievements,Footer} from './components';
+import { About, Education, Hero, Navbar, Tech, Works, Achievements,Footer, CourseWork} from './components';
 // starting point
 function App() {
   return (
@@ -21,6 +21,8 @@ function App() {
     <Works />
     {/* Achievements Section */}
     <Achievements/>
+    {/* CourseWork Section */}
+    <CourseWork/>
         {/* Education Section */}
         <Education />
         <Footer/>

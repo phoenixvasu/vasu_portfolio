@@ -7,6 +7,7 @@ import Education from "./Education";
 import Works from "./Works";
 import Achievements from "./Achievements";
 import Footer from "./Footer";
+import CourseWork from "./CourseWork"
 
 export {
   Hero,
@@ -16,5 +17,6 @@ export {
   Education,
   Works,
   Achievements,
-  Footer
+  Footer,
+  CourseWork
 };
