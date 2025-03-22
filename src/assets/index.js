@@ -9,6 +9,8 @@ import kvlogo from "./company/kvlogo.jpg"
 import talkstraimage from "./talkstra.png"
 import blogmentumimage from "./blogmentum.png"
 import shoppingcartimage from "./shoppingcart.png"
+import skyfareimage from "./skyfare.png"
+import cropwiseimage from "./cropwise.png"
 import github from "./github.png"
 
 export {
@@ -21,4 +23,6 @@ export {
   talkstraimage,
   blogmentumimage,
   shoppingcartimage,
+  skyfareimage,
+  cropwiseimage
 };

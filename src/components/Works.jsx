@@ -18,7 +18,7 @@ const ProjectCard = ({
   animate,
 }) => {
   return (
-    <motion.div variants={animate}>
+    <motion.div variants={animate} className="flex justify-center">
       <Tilt
         options={{
           max: 45,
@@ -75,7 +75,7 @@ const ProjectCard = ({
 
 const Works = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "0px 0px -200px 0px" }); // Adjust amount as needed
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -200px 0px" });
   const mainControls = useAnimation();
 
   useEffect(() => {
@@ -85,7 +85,7 @@ const Works = () => {
   }, [isInView, mainControls]);
 
   return (
-    <section ref={ref}>
+    <section ref={ref} className="flex flex-col items-center">
       <motion.div
         initial="hidden"
         animate={mainControls}
@@ -94,9 +94,7 @@ const Works = () => {
           visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
         }}
       >
-        <h3 className={`${styles.sectionSubText} text-center`}>
-          Innovative Creations
-        </h3>
+        <h3 className={`${styles.sectionSubText} text-center`}>Innovative Creations</h3>
       </motion.div>
 
       <motion.div
@@ -111,13 +109,7 @@ const Works = () => {
       </motion.div>
 
       <motion.div>
-        <div
-          className={`${
-            window.innerWidth <= 768
-              ? "grid grid-cols-1 gap-4 place-items-center"
-              : "flex flex-wrap gap-7"
-          }`}
-        >
+        <div className="flex flex-wrap justify-center gap-7">
           {projects.map((project, index) => (
             <ProjectCard
               key={`project-${index}`}

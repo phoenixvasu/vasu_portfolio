@@ -2,6 +2,8 @@ import {
   talkstraimage,
   blogmentumimage,
   shoppingcartimage,
+  skyfareimage,
+  cropwiseimage,
   iiitnlogo, // Add this in assets
   aspcslogo, // Add this in assets
   kvlogo,
@@ -110,6 +112,30 @@ const projects = [
     source_code_link: "https://github.com/phoenixvasu/shopping-cart",
     live_project_link: "https://shopping-cart-8.onrender.com/",
   },
+  {
+    name: "Flight Price Prediction",
+    description: "A machine learning project that predicts flight prices based on various parameters.",
+    tags: [
+      { name: "Python", color: "text-blue-500" },
+      { name: "Machine Learning", color: "text-green-500" },
+      { name: "Flask", color: "text-yellow-500" }
+    ],
+    image: skyfareimage,
+    source_code_link: "https://github.com/phoenixvasu/skyfare-insights",
+    live_project_link: "https://skyfare-insights-1.onrender.com/"
+  },
+  {
+    name: "Crop Prediction",
+    description: "An AI-powered crop prediction model that suggests suitable crops based on soil and weather conditions.",
+    tags: [
+      { name: "Python", color: "text-blue-500" },
+      { name: "AI", color: "text-purple-500" },
+      { name: "Django", color: "text-green-500" }
+    ],
+    image: cropwiseimage,
+    source_code_link: "https://github.com/phoenixvasu/CropWise",
+    live_project_link: "https://cropwise-1-euqg.onrender.com/"
+  }
 ];
 
 export { services, technologies, projects, education };
