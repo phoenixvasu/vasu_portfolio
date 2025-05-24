@@ -72,7 +72,7 @@ const Hero = () => {
   const typedItems = ["Software Developer"];
 
   const contactLinks = [
-    { text: 'Resume', link: 'https://drive.google.com/file/d/10avKm5bUJMLCLYeRQoVYzNOWC86Hc5OI/view?usp=drive_link', icon: <FaPager /> },
+    { text: 'Resume', link: 'https://drive.google.com/file/d/15AqRPyQpGAa2IQZQWtpk1l_coT1dx42L/view?usp=sharing', icon: <FaPager /> },
     { text: 'Gmail', link: 'mailto:vasu21aug@gmail.com', icon: <FaEnvelope /> },
     { text: 'LinkedIn', link: 'https://www.linkedin.com/in/vasu-nandan-9bb342257/', icon: <FaLinkedin /> },
     { text: 'GitHub', link: 'https://github.com/phoenixvasu', icon: <FaGithub /> },

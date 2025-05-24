@@ -33,7 +33,8 @@ import {
   SiScipy,
   SiTensorflow,
   SiKeras,
-  SiOpencv
+  SiOpencv,
+  SiGo
 } from "react-icons/si";
 
 // Skill Data with Colors
@@ -42,6 +43,7 @@ const programming = [
   { name: "C++", icon: SiCplusplus, color: "#00599C" },
   { name: "Python", icon: SiPython, color: "#3776AB" },
   { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+  { name: "Go", icon: SiGo, color: "#00ADD8" },
 ];
 
 const frontend = [

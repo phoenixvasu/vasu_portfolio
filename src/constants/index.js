@@ -7,6 +7,7 @@ import {
   iiitnlogo, // Add this in assets
   aspcslogo, // Add this in assets
   kvlogo,
+  blitzboardimage,
 } from "../assets";
 
 export const navLinks = [
@@ -33,7 +34,7 @@ const education = [
     points: [
       "CGPA - 8.98",
       "Specializing in AI and Machine Learning.",
-      "Active participant in coding competitions."
+      "Active participant in coding competitions.",
     ],
   },
   {
@@ -44,7 +45,7 @@ const education = [
     date: "2020 - 2021",
     points: [
       "Aggregate: 97.33%",
-      "Excelled in academics with strong problem-solving skills."
+      "Excelled in academics with strong problem-solving skills.",
     ],
   },
   {
@@ -55,24 +56,38 @@ const education = [
     date: "2018 - 2019",
     points: [
       "Aggregate: 96.4%",
-      "Achieved academic excellence and leadership skills."
+      "Achieved academic excellence and leadership skills.",
     ],
   },
 ];
 
 const technologies = [
   { name: "C++" },
-  { name: "Python"},
+  { name: "Python" },
   { name: "JavaScript" },
-  { name: "React.js"},
-  { name: "Node.js"},
+  { name: "React.js" },
+  { name: "Node.js" },
   { name: "MongoDB" },
   { name: "PostgreSQL" },
-  { name: "Git"},
+  { name: "Git" },
   { name: "Tailwind CSS" },
 ];
 
 const projects = [
+  {
+    name: "BlitzBoard 📝",
+    description:
+      "A modern, real-time collaborative text editor built with React, Go, WebSocket, and Supabase. Features include real-time cursor tracking, presence indicators, and automatic saving for seamless collaboration.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Go", color: "green-text-gradient" },
+      { name: "WebSocket", color: "pink-text-gradient" },
+      { name: "Supabase", color: "purple-text-gradient" },
+    ],
+    image: blitzboardimage,
+    source_code_link: "https://github.com/phoenixvasu/BlitzBoard",
+    live_project_link: "https://blitzboard.onrender.com/",
+  },
   {
     name: "Talkstra 💬",
     description:
@@ -114,28 +129,30 @@ const projects = [
   },
   {
     name: "Flight Price Prediction",
-    description: "A machine learning project that predicts flight prices based on various parameters.",
+    description:
+      "A machine learning project that predicts flight prices based on various parameters.",
     tags: [
       { name: "Python", color: "text-blue-500" },
       { name: "Machine Learning", color: "text-green-500" },
-      { name: "Flask", color: "text-yellow-500" }
+      { name: "Flask", color: "text-yellow-500" },
     ],
     image: skyfareimage,
     source_code_link: "https://github.com/phoenixvasu/skyfare-insights",
-    live_project_link: "https://skyfare-insights-1.onrender.com/"
+    live_project_link: "https://skyfare-insights-1.onrender.com/",
   },
   {
     name: "Crop Prediction",
-    description: "An AI-powered crop prediction model that suggests suitable crops based on soil and weather conditions.",
+    description:
+      "An AI-powered crop prediction model that suggests suitable crops based on soil and weather conditions.",
     tags: [
       { name: "Python", color: "text-blue-500" },
       { name: "AI", color: "text-purple-500" },
-      { name: "Django", color: "text-green-500" }
+      { name: "Django", color: "text-green-500" },
     ],
     image: cropwiseimage,
     source_code_link: "https://github.com/phoenixvasu/CropWise",
-    live_project_link: "https://cropwise-1-euqg.onrender.com/"
-  }
+    live_project_link: "https://cropwise-1-euqg.onrender.com/",
+  },
 ];
 
 export { services, technologies, projects, education };
