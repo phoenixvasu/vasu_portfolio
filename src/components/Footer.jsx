@@ -5,7 +5,7 @@ import { faLinkedin, faGithub, faTwitter, faInstagram } from "@fortawesome/free-
 
 const Footer = () => {
   return (
-    <footer className="bg-black-100 text-white py-12 px-6">
+    <footer id="contact" className="bg-black-100 text-white py-12 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
 
         {/* Contact Section */}

@@ -6,7 +6,6 @@ import { textVariant } from "../utils/motion";
 import {
   SiC,
   SiCplusplus,
-  SiPython,
   SiRender,
   SiJavascript,
   SiMysql,
@@ -19,58 +18,42 @@ import {
   SiChakraui,
   SiNodedotjs,
   SiExpress,
-  SiFlask,
   SiPrisma,
   SiPostman,
   SiGithub,
   SiSocketdotio,
   SiJsonwebtokens,
-  SiNextdotjs,
-  SiNetlify,
-  SiVercel,
-  SiNumpy,
-  SiPandas,
-  SiScipy,
-  SiTensorflow,
-  SiKeras,
-  SiOpencv,
-  SiGo
+  SiTypescript,
+  SiTailwindcss,
+  SiRedux,
+  SiDocker,
+  SiVercel
 } from "react-icons/si";
 
 // Skill Data with Colors
 const programming = [
   { name: "C", icon: SiC, color: "#A8B9CC" },
   { name: "C++", icon: SiCplusplus, color: "#00599C" },
-  { name: "Python", icon: SiPython, color: "#3776AB" },
   { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
-  { name: "Go", icon: SiGo, color: "#00ADD8" },
+  { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
 ];
 
 const frontend = [
   { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
   { name: "CSS3", icon: SiCss3, color: "#1572B6" },
   { name: "React.js", icon: SiReact, color: "#61DAFB" },
-  { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
   { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
   { name: "Chakra UI", icon: SiChakraui, color: "#319795" },
+  { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+  { name: "Redux", icon: SiRedux, color: "#764ABC" },
 ];
 
 const backend = [
   { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
   { name: "Express.js", icon: SiExpress, color: "#000000" },
-  { name: "Flask", icon: SiFlask, color: "#000000" },
   { name: "Prisma", icon: SiPrisma, color: "#2D3748" },
   { name: "Socket.io", icon: SiSocketdotio, color: "#010101" },
   { name: "JWT", icon: SiJsonwebtokens, color: "#000000" },
-];
-
-const aiMl = [
-  { name: "NumPy", icon: SiNumpy, color: "#013243" },
-  { name: "Pandas", icon: SiPandas, color: "#150458" },
-  { name: "SciPy", icon: SiScipy, color: "#8CAAE6" },
-  { name: "TensorFlow", icon: SiTensorflow, color: "#FF6F00" },
-  { name: "Keras", icon: SiKeras, color: "#D00000" },
-  { name: "OpenCV", icon: SiOpencv, color: "#5C3EE8" },
 ];
 
 const databases = [
@@ -82,16 +65,15 @@ const databases = [
 const tools = [
   { name: "GitHub", icon: SiGithub, color: "#181717" },
   { name: "Postman", icon: SiPostman, color: "#FF6C37" },
-  { name: "Netlify", icon: SiNetlify, color: "#00C7B7" },
   { name: "Vercel", icon: SiVercel, color: "#000000" },
   { name: "Render", icon: SiRender, color: "#000000" },
+  { name: "Docker", icon: SiDocker, color: "#2496ED" },
 ];
 
 const categories = [
   { name: "Programming", data: programming },
   { name: "Frontend", data: frontend },
   { name: "Backend", data: backend },
-  { name: "AI/ML", data: aiMl },
   { name: "Databases", data: databases },
   { name: "Tools & Deployment", data: tools },
 ];

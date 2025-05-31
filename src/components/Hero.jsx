@@ -3,6 +3,7 @@ import { styles } from "../styles";
 import { useState, useEffect } from "react";
 import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaCode, FaNotesMedical, FaEnvelopeOpenText, FaPage4, FaPagelines, FaPager } from 'react-icons/fa';
 import { SiCodeforces, SiCodechef, SiLeetcode } from "react-icons/si";
+import { resumeLink } from "../constants";
 
 const TypewriterText = ({ texts }) => {
   const [displayText, setDisplayText] = useState("");
@@ -72,7 +73,7 @@ const Hero = () => {
   const typedItems = ["Software Developer"];
 
   const contactLinks = [
-    { text: 'Resume', link: 'https://drive.google.com/file/d/15AqRPyQpGAa2IQZQWtpk1l_coT1dx42L/view?usp=sharing', icon: <FaPager /> },
+    { text: 'Resume', link: resumeLink, icon: <FaPager /> },
     { text: 'Gmail', link: 'mailto:vasu21aug@gmail.com', icon: <FaEnvelope /> },
     { text: 'LinkedIn', link: 'https://www.linkedin.com/in/vasu-nandan-9bb342257/', icon: <FaLinkedin /> },
     { text: 'GitHub', link: 'https://github.com/phoenixvasu', icon: <FaGithub /> },
@@ -115,11 +116,10 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915EFF]">Vasu</span> <WavingHand />
           </h1>
           <p className={`${styles.heroSubText} mt-4 mb-8 text-white-100 leading-relaxed`}> 
-            {/* I'm a <TypewriterText texts={typedItems} /> */}
             I'm a <span className="text-[#915EFF]">Software Developer</span>
             <br />
-            {/* <b>Welcome to my portfolio, please view on desktop for an interactive experience!</b> */}
-            <b>skilled in <span className="text-[#915EFF]">Full Stack Development</span> and <span className="text-[#915EFF]">Machine Learning </span></b><br /><b>well versed with data structures and algorithms</b>
+            <b>skilled in <span className="text-[#915EFF]">Full Stack Development</span></b><br />
+            <b>well versed with data structures and algorithms</b>
           </p>
 
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-5">

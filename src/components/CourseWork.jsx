@@ -1,17 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaLaptopCode, FaRobot, FaNetworkWired, FaDatabase, FaBrain, FaChartLine } from "react-icons/fa";
+import { FaLaptopCode, FaNetworkWired, FaDatabase, FaChartLine, FaCode, FaServer } from "react-icons/fa";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 
 const categories = [
   {
-    title: "Programming",
+    title: "Programming & Software Development",
     courses: [
       { name: "Computer Programming", icon: FaLaptopCode },
       { name: "Application Programming", icon: FaLaptopCode },
       { name: "Object Oriented Programming", icon: FaLaptopCode },
-      { name: "Software Engineering", icon: FaLaptopCode }
+      { name: "Software Engineering", icon: FaLaptopCode },
+      { name: "Web Development", icon: FaCode },
+      { name: "Software Architecture", icon: FaServer }
     ]
   },
   {
@@ -20,33 +22,20 @@ const categories = [
       { name: "Computer System Organisation", icon: FaNetworkWired },
       { name: "Operating Systems", icon: FaNetworkWired },
       { name: "Computer Networks", icon: FaNetworkWired },
-      { name: "Parallel and Distributed Computing", icon: FaNetworkWired }
+      { name: "Parallel and Distributed Computing", icon: FaNetworkWired },
+      { name: "Cloud Computing", icon: FaServer }
     ]
   },
   {
-    title: "AI and Machine Learning",
+    title: "Data Management and Algorithms",
     courses: [
-      { name: "Artificial Intelligence, Ethics and Society", icon: FaBrain },
-      { name: "Machine Learning", icon: FaBrain },
-      { name: "Artificial Intelligence", icon: FaBrain },
-      { name: "Reinforcement Learning", icon: FaBrain },
-      { name: "Neural Networks and Deep Learning", icon: FaBrain },
-      { name: "Natural Language Processing", icon: FaRobot },
-      { name: "Computer Vision Techniques", icon: FaBrain },
-      { name: "Optimization Techniques in ML", icon: FaChartLine }
-    ]
-  },
-  {
-    title: "Data Science and Algorithms",
-    courses: [
-      { name: "Calculus for Data Science", icon: FaChartLine },
       { name: "Data Structures", icon: FaDatabase },
       { name: "Design & Analysis of Algorithms", icon: FaChartLine },
+      { name: "Database Management Systems", icon: FaDatabase },
       { name: "Data Handling and Visualization", icon: FaChartLine },
-      { name: "Database Management Systems", icon: FaDatabase }
+      { name: "Big Data Technologies", icon: FaDatabase }
     ]
-  },
-  
+  }
 ];
 
 const Coursework = () => {

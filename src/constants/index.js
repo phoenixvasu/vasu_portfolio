@@ -1,13 +1,11 @@
 import {
   talkstraimage,
-  blogmentumimage,
   shoppingcartimage,
-  skyfareimage,
-  cropwiseimage,
-  iiitnlogo, // Add this in assets
-  aspcslogo, // Add this in assets
+  iiitnlogo,
+  aspcslogo,
   kvlogo,
   blitzboardimage,
+  learnsyncimage,
 } from "../assets";
 
 export const navLinks = [
@@ -18,22 +16,25 @@ export const navLinks = [
   { id: "education", title: "Education" },
 ];
 
+export const resumeLink =
+  "https://drive.google.com/file/d/1Q2o327JGZ_y9Zi14klp1fwJT6WRSVPRm/view?usp=drive_link";
+
 const services = [
   { title: "Full-Stack Developer" },
-  { title: "AI Enthusiast" },
+  { title: "Web Developer" },
   { title: "Problem Solver" },
 ];
 
 const education = [
   {
-    title: "B.Tech in Computer Science and Engineering (AIML)",
+    title: "B.Tech in Computer Science and Engineering",
     company_name: "Indian Institute of Information Technology, Nagpur",
     icon: iiitnlogo,
     iconBg: "#fff",
     date: "2022 - 2026",
     points: [
       "CGPA - 8.98",
-      "Specializing in AI and Machine Learning.",
+      "Specializing in Software Development and Web Technologies.",
       "Active participant in coding competitions.",
     ],
   },
@@ -65,15 +66,30 @@ const technologies = [
   { name: "C++" },
   { name: "Python" },
   { name: "JavaScript" },
+  { name: "TypeScript" },
   { name: "React.js" },
   { name: "Node.js" },
   { name: "MongoDB" },
   { name: "PostgreSQL" },
   { name: "Git" },
   { name: "Tailwind CSS" },
+  { name: "Docker" },
 ];
 
 const projects = [
+  {
+    name: "LearnSync 📚",
+    description:
+      "A modern skill-tracking platform with real-time progress monitoring and interactive dashboards. Features include dark mode, markdown-enabled notes, and secure Firebase authentication with real-time data sync and animated skill progress visualizations.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Firebase", color: "green-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
+    ],
+    image: learnsyncimage,
+    source_code_link: "https://github.com/phoenixvasu/learnsync",
+    live_project_link: "https://learnsync-eta.vercel.app/",
+  },
   {
     name: "BlitzBoard 📝",
     description:
@@ -86,7 +102,6 @@ const projects = [
     ],
     image: blitzboardimage,
     source_code_link: "https://github.com/phoenixvasu/BlitzBoard",
-    live_project_link: "https://blitzboard.onrender.com/",
   },
   {
     name: "Talkstra 💬",
@@ -102,56 +117,17 @@ const projects = [
     live_project_link: "https://talkstra-chat-app.onrender.com/",
   },
   {
-    name: "BlogMentum ✍️",
-    description:
-      "Full Stack blog application with authentication, comments, and like system. Users can create and explore engaging blogs with a seamless interface.",
-    tags: [
-      { name: "React", color: "blue-text-gradient" },
-      { name: "Express.js", color: "green-text-gradient" },
-      { name: "MongoDB", color: "pink-text-gradient" },
-    ],
-    image: blogmentumimage,
-    source_code_link: "https://github.com/phoenixvasu/Blogmentum",
-    live_project_link: "https://blogmentum.onrender.com/",
-  },
-  {
     name: "Shopping Cart 🛒",
     description:
       "E-commerce platform for buying and selling products. Features include product management, cart management, and checkout functionality.",
     tags: [
       { name: "React", color: "blue-text-gradient" },
-      { name: "Redux", color: "green-text-gradient" },
-      { name: "PostgreSQL", color: "pink-text-gradient" },
+      { name: "Context API", color: "green-text-gradient" },
+      { name: "MongoDB", color: "pink-text-gradient" },
     ],
     image: shoppingcartimage,
     source_code_link: "https://github.com/phoenixvasu/shopping-cart",
     live_project_link: "https://shopping-cart-8.onrender.com/",
-  },
-  {
-    name: "Flight Price Prediction",
-    description:
-      "A machine learning project that predicts flight prices based on various parameters.",
-    tags: [
-      { name: "Python", color: "text-blue-500" },
-      { name: "Machine Learning", color: "text-green-500" },
-      { name: "Flask", color: "text-yellow-500" },
-    ],
-    image: skyfareimage,
-    source_code_link: "https://github.com/phoenixvasu/skyfare-insights",
-    live_project_link: "https://skyfare-insights-1.onrender.com/",
-  },
-  {
-    name: "Crop Prediction",
-    description:
-      "An AI-powered crop prediction model that suggests suitable crops based on soil and weather conditions.",
-    tags: [
-      { name: "Python", color: "text-blue-500" },
-      { name: "AI", color: "text-purple-500" },
-      { name: "Django", color: "text-green-500" },
-    ],
-    image: cropwiseimage,
-    source_code_link: "https://github.com/phoenixvasu/CropWise",
-    live_project_link: "https://cropwise-1-euqg.onrender.com/",
   },
 ];
 

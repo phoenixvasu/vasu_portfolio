@@ -88,11 +88,11 @@ const About = () => {
         >
           <ul className="mt-4 text-secondary text-[17px] max-w-3xl space-y-6">
             {[
-              { emoji: "👨‍💻", text: "I'm a passionate Software Engineer, skilled in full stack development, Machine Learning, Data Structures and Algorithms (DSA) and competitive programming."  },
-              { emoji: "🎓", text: "Currently pursuing a B.Tech in CSE (AIML) at IIIT Nagpur, passionate about solving real-world problems with technology." },
-              { emoji: "🛠", text: "Experienced in full-stack development, building scalable web applications and APIs." },
-              { emoji: "🔧", text: "Driven by curiosity and eager to explore the latest advancements in AI and Machine Learning." },
-              { emoji: "💡", text: "I love solving complex problems and continuously learning new skills." },
+              { emoji: "👨‍💻", text: "I'm a passionate Software Engineer, skilled in full stack development, Data Structures and Algorithms (DSA) and competitive programming."  },
+              { emoji: "🎓", text: "Currently pursuing a B.Tech in Computer Science and Engineering at IIIT Nagpur, passionate about building scalable web applications." },
+              { emoji: "🛠", text: "Experienced in full-stack development, building scalable web applications and RESTful APIs." },
+              { emoji: "🔧", text: "Proficient in modern web technologies and best practices for software development." },
+              { emoji: "💡", text: "I love solving complex problems and continuously learning new technologies." },
             ].map((item, index) => (
               <motion.li key={index} className="flex items-start" variants={fadeIn("up", "spring", index * 0.2, 0.75)}>
                 <span className="mr-4 text-2xl">{item.emoji}</span>

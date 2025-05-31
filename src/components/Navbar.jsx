@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { navLinks } from "../constants";
+import { navLinks, resumeLink } from "../constants";
 import { logo } from "../assets";
 
 const Navbar = () => {
@@ -127,6 +127,35 @@ const Navbar = () => {
               </a>
             </motion.li>
           ))}
+          <motion.li
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            <a
+              href="#contact"
+              className={`${
+                active === "Contact" ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer transition-colors duration-300`}
+              onClick={() => setActive("Contact")}
+            >
+              Contact
+            </a>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            <a
+              href={resumeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-tertiary py-2 px-4 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:shadow-lg hover:shadow-primary transition-all duration-300"
+            >
+              Resume
+            </a>
+          </motion.li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -164,6 +193,33 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </motion.li>
               ))}
+              <motion.li
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3, delay: 0.5 }}
+                className="font-poppins font-medium cursor-pointer text-[16px]"
+                onClick={() => {
+                  setToggle(!toggle);
+                  setActive("Contact");
+                }}
+              >
+                <a href="#contact">Contact</a>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3, delay: 0.5 }}
+                className="font-poppins font-medium cursor-pointer text-[16px]"
+              >
+                <a
+                  href={resumeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white"
+                >
+                  Resume
+                </a>
+              </motion.li>
             </ul>
           </motion.div>
         </div>
