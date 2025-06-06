@@ -114,7 +114,7 @@ const projects = [
     ],
     image: talkstraimage,
     source_code_link: "https://github.com/phoenixvasu/Talkstra-chat-app",
-    live_project_link: "https://talkstra-chat-app.onrender.com/",
+    live_project_link: "https://talkstra-chat-app-v3tb.vercel.app/",
   },
   {
     name: "Shopping Cart 🛒",
@@ -127,7 +127,7 @@ const projects = [
     ],
     image: shoppingcartimage,
     source_code_link: "https://github.com/phoenixvasu/shopping-cart",
-    live_project_link: "https://shopping-cart-8.onrender.com/",
+    live_project_link: "https://shopping-cart-uwys.vercel.app/",
   },
 ];
 
